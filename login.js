@@ -46,7 +46,7 @@ const app = {
            
           //使用document.cookie 將token存入網站cookie中，再使用expired 設置過期時間
             document.cookie = `vivianhuang=${token}; expires=${new Date(expired)}; path=/`;
-            window.location = 'products.html';
+            window.location = 'index.html';
         })
         .catch((err) => {
           console.log(err.response.data.message);
